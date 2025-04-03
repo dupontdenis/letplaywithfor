@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequence Search Visualization</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.mjs" type="module"></script>
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Visualization</h1>
+    <a href="/index.html" class="btn btn-secondary ml-2">🪛HOME</a>
+    <div class="sequences mt-4">
+      <label for="sequence1">Fruit Basket</label>
+      <input type="text" id="sequence1" class="form-control" placeholder="" value="🍎🍌🍍🍏🍍🍎🍏🍋🍋" readonly>
+      <label for="sequence2">Fruit Property</label>
+      <select id="sequence2" class="form-control">
+        <option value="seed">Seed</option>
+        <option value="seedless">Seedless</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="skin">Skin</option>
+        <option value="no-skin">No Skin</option>
+      </select>
+    </div>
+    <div class="controls mt-3">
+      <button id="next-step" class="btn btn-primary">Run</button>
+    </div>
+
+    <div class="highlighted-sequences mt-4">
+      <p id="highlighted-sequence1" class="sequence"></p>
+      <p id="highlighted-sequence2" class="sequence"></p>
+    </div>
+    <div class="result mt-3">
+      <p id="result-message" class="text-center text-success"></p>
+    </div>
+  </div>
+</body>
+
+</html>
