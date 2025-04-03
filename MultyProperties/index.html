@@ -13,12 +13,20 @@
 <body>
   <div class="container mt-5">
     <h1 class="text-center">Visualisation</h1>
-    <a href="../index.html" class="btn btn-secondary ml-2">HOME 🪛</a>
+    <a href="../index.html" class="btn btn-secondary ml-2">🪛HOME</a>
     <div class="sequences mt-4">
-      <label for="sequence1">Sequence de fruits</label>
-      <input type="text" id="sequence1" class="form-control" placeholder="" value="🍎🍏🍎🍏🍌🍍🍍">
-      <label for="sequence2">Sequence</label>
-      <input type="text" id="sequence2" class="form-control" placeholder="" value="🍏🍌🍍">
+      <label for="sequence1">Fruit Basket</label>
+      <input type="text" id="sequence1" class="form-control" placeholder="" value="🍎🍌🍍🍏🍍🍎🍏🍋🍋" readonly>
+      <label for="sequence2">Fruit Properties</label>
+      <select id="sequence2" class="form-control" multiple>
+        <option value="seed">Seed</option>
+        <option value="seedless">Seedless</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="skin">Skin</option>
+        <option value="no-skin">No Skin</option>
+      </select>
     </div>
     <div class="controls mt-3">
       <button id="next-step" class="btn btn-primary">Run</button>
