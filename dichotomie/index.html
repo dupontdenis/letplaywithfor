@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Search Visualization</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="./main.mjs" type="module"></script>
+
+</head>
+
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center">Dichotomie</h1>
+    <a href="../index.html" class="btn btn-secondary ml-2">HOME 🪛</a>
+    <div class="sequences mt-4">
+      <label for="sequence1">Ordered List</label>
+      <input type="text" id="sequence1" class="form-control" placeholder="" value="2 4 5 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50">
+      <label for="sequence2">Target Value</label>
+      <input type="text" id="sequence2" class="form-control" placeholder="" value="48">
+    </div>
+    <div class="controls mt-3">
+      <button id="next-step" class="btn btn-primary">Run</button>
+    </div>
+
+    <div class="highlighted-sequences mt-4">
+      <p id="highlighted-sequence1" class="sequence"></p>
+    </div>
+    <div class="result mt-3">
+      <p id="result-message" class="text-center text-success"></p>
+    </div>
+
+    <div class="history mt-4">
+      <h3>History</h3>
+      <div id="history-container" class="sequence-history"></div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/* Define CSS variables in :root */
+:root {
+  --text-decoration-thickness: 6px;
+  /* Thickness of the underline */
+  --text-underline-offset: 4px;
+  /* Padding between text and underline */
+  --highlight-color: inherit;
+  /* Default color for highlights */
+}
+
+/* Apply styles to <span> elements with class names starting with 'highlight' */
+.underline {
+  text-decoration: underline;
+}
+
+/* Specific highlight colors */
+.highlight-orange {
+  color: orange;
+  text-decoration: underline;
+}
+
+.highlight-red {
+  color: red;
+}
+
+.highlight-green {
+  color: green;
+}
+
+.highlight-blue {
+  color: blue;
+}
+
+.highlight-middle {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+body {
+  padding: 20px;
+}
