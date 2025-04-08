@@ -44,7 +44,7 @@ export const ControlModule = {
    * Updates the visualization for the ordered list.
    */
   updateVisualization() {
-    const { orderedList } = this.getInputs();
+    const { orderedList, targetValue } = this.getInputs();
 
     console.log("Updating visualization...");
     console.log(`Left=${this.left}, Mid=${this.mid}, Right=${this.right}`);
@@ -57,7 +57,7 @@ export const ControlModule = {
         console.log(`Index=${i}, Value=${orderedList[i]}, State=middle`);
       } else if (i >= this.left && i < this.mid) {
         // Left to mid-1: orange if value > middle value
-        if (orderedList[i] < orderedList[this.mid]) {
+        if (targetValue > orderedList[this.mid]) {
           this.state[i] = "black"; // Neutral part
           console.log(`Index=${i}, Value=${orderedList[i]}, State=black`);
         } else {
@@ -66,7 +66,7 @@ export const ControlModule = {
         }
       } else if (i > this.mid && i <= this.right) {
         // Mid+1 to right: orange if value < middle value
-        if (orderedList[i] > orderedList[this.mid]) {
+        if (target > orderedList[this.mid]) {
           this.state[i] = "orange";
           console.log(`Index=${i}, Value=${orderedList[i]}, State=orange`);
         } else {
