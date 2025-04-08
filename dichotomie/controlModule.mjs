@@ -52,6 +52,7 @@ export const ControlModule = {
 
     // Update the state array
     for (let i = 0; i < orderedList.length; i++) {
+        console.log(`Index=${i}`);
       if (i === this.mid) {
         this.state[i] = "middle"; // Highlight the middle element
         console.log(`Index=${i}, Value=${orderedList[i]}, State=middle`);
@@ -73,7 +74,8 @@ export const ControlModule = {
           this.state[i] = "black"; // Neutral part
           console.log(`Index=${i}, Value=${orderedList[i]}, State=black`);
         }
-      } else if (this.state[i] === "black") {
+      } else if (this.state[i] == "black") {
+          console.log(`Trouve un black à mettre en rouge Index=${i}`);
         this.state[i] = "red"; // Transition previous orange to red
         console.log(`Index=${i}, Value=${orderedList[i]}, State=red`);
       }
