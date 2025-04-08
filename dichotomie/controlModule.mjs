@@ -66,7 +66,7 @@ export const ControlModule = {
         }
       } else if (i > this.mid && i <= this.right) {
         // Mid+1 to right: orange if value < middle value
-        if (target > orderedList[this.mid]) {
+        if (targetValue > orderedList[this.mid]) {
           this.state[i] = "orange";
           console.log(`Index=${i}, Value=${orderedList[i]}, State=orange`);
         } else {
