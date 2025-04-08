@@ -73,7 +73,7 @@ export const ControlModule = {
           this.state[i] = "black"; // Neutral part
           console.log(`Index=${i}, Value=${orderedList[i]}, State=black`);
         }
-      } else if (this.state[i] === "orange") {
+      } else if (this.state[i] === "black") {
         this.state[i] = "red"; // Transition previous orange to red
         console.log(`Index=${i}, Value=${orderedList[i]}, State=red`);
       }
